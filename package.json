@@ -5,13 +5,13 @@
   "private": true,
   "scripts": {
     "postinstall": "echo '✅ Browser tools ready. Run: python run_agent.py --help'",
-    "mygit": "source venv/bin/activate && python3 scripts/mygit.py",
-    "mygit:full": "source venv/bin/activate && python3 scripts/mygit.py",
-    "hermes": "source venv/bin/activate && hermes",
-    "chat": "source venv/bin/activate && hermes chat",
-    "config": "source venv/bin/activate && hermes config",
-    "skills": "source venv/bin/activate && hermes skills",
-    "gateway": "source venv/bin/activate && hermes gateway"
+    "mygit": "eval $(bash scripts/get_proxy.sh) && source venv/bin/activate && python3 scripts/mygit.py",
+    "mygit:full": "eval $(bash scripts/get_proxy.sh) && source venv/bin/activate && python3 scripts/mygit.py",
+    "hermes": "eval $(bash scripts/get_proxy.sh) && source venv/bin/activate && hermes",
+    "chat": "eval $(bash scripts/get_proxy.sh) && source venv/bin/activate && hermes chat",
+    "config": "eval $(bash scripts/get_proxy.sh) && source venv/bin/activate && hermes config",
+    "skills": "eval $(bash scripts/get_proxy.sh) && source venv/bin/activate && hermes skills",
+    "gateway": "eval $(bash scripts/get_proxy.sh) && source venv/bin/activate && hermes gateway"
   },
   "repository": {
     "type": "git",
