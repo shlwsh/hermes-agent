@@ -336,6 +336,11 @@ Activate with `/skin cyberpunk` or `display.skin: cyberpunk` in config.yaml.
 ---
 
 ## Important Policies
+
+### Language and Documentation
+- **中文优先 (Chinese First):** All interactions, conversation context, and reasoning MUST be in Chinese.
+- **文档输出 (Documentation Output):** Any generated documentation MUST be written in Chinese and output to the `docs-zh/` directory by default.
+
 ### Prompt Caching Must Not Break
 
 Hermes-Agent ensures caching remains valid throughout a conversation. **Do NOT implement changes that would:**
