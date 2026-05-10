@@ -1,0 +1,29 @@
+{
+  "feishu": {
+    "domain": "feishu",
+    "defaultAccount": "main",
+    "accounts": {
+      "default": {},
+      "main": {
+        "appId": "cli_a925f0c23538dbcd",
+        "appSecret": "9angvKL3cWYx5BSQmfIsCgVeW4M70Rqf",
+        "botName": "OpenClaw",
+        "dmPolicy": "open",
+        "groupPolicy": "open",
+        "allowFrom": [
+          "*"
+        ]
+      },
+      "nurse": {
+        "appId": "cli_a930154680789bd8",
+        "appSecret": "77NR5pFKhDxaPzuX55mCkc43fdseNAyp",
+        "botName": "NurseBot",
+        "dmPolicy": "open",
+        "groupPolicy": "open",
+        "allowFrom": [
+          "*"
+        ]
+      }
+    }
+  }
+}

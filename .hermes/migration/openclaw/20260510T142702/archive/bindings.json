@@ -1,0 +1,10 @@
+[
+  {
+    "type": "route",
+    "agentId": "nurse",
+    "match": {
+      "channel": "feishu",
+      "accountId": "nurse"
+    }
+  }
+]

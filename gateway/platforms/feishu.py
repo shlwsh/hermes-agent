@@ -1210,6 +1210,7 @@ class FeishuAdapter(BasePlatformAdapter):
             .register_p2_card_action_trigger(self._on_card_action_trigger)
             .register_p2_im_chat_member_bot_added_v1(self._on_bot_added_to_chat)
             .register_p2_im_chat_member_bot_deleted_v1(self._on_bot_removed_from_chat)
+            .register_p2_im_chat_access_event_bot_p2p_chat_entered_v1(self._on_p2p_chat_entered)
             .build()
         )
 
@@ -1818,6 +1819,14 @@ class FeishuAdapter(BasePlatformAdapter):
         event = getattr(data, "event", None)
         chat_id = str(getattr(event, "chat_id", "") or "")
         logger.info("[Feishu] Bot removed from chat: %s", chat_id)
+        self._chat_info_cache.pop(chat_id, None)
+
+    def _on_p2p_chat_entered(self, data: Any) -> None:
+        """Handle bot entering a P2P (1-on-1) chat."""
+        event = getattr(data, "event", None)
+        chat_id = str(getattr(event, "chat_id", "") or "")
+        logger.debug("[Feishu] Bot entered P2P chat: %s", chat_id)
+        # Invalidate chat info cache so next message gets fresh metadata
         self._chat_info_cache.pop(chat_id, None)
 
     def _on_reaction_event(self, event_type: str, data: Any) -> None:

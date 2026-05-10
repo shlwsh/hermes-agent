@@ -1,0 +1,18 @@
+[
+  {
+    "id": "main"
+  },
+  {
+    "id": "nurse",
+    "name": "nurse",
+    "workspace": "/home/smz/.openclaw/workspace-nurse",
+    "agentDir": "/home/smz/.openclaw/agents/nurse/agent",
+    "model": "vllm/deepseek-v3",
+    "skills": [
+      "*"
+    ],
+    "tools": {
+      "profile": "full"
+    }
+  }
+]

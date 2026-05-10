@@ -1,0 +1,24 @@
+{
+  "port": 18789,
+  "mode": "local",
+  "bind": "loopback",
+  "auth": {
+    "mode": "token",
+    "token": "0ebb357ce0b7531cb076819de2971a35bdea4f90585125cd"
+  },
+  "tailscale": {
+    "mode": "off",
+    "resetOnExit": false
+  },
+  "nodes": {
+    "denyCommands": [
+      "camera.snap",
+      "camera.clip",
+      "screen.record",
+      "contacts.add",
+      "calendar.add",
+      "reminders.add",
+      "sms.send"
+    ]
+  }
+}

@@ -1,0 +1,2 @@
+15:15:58 interrupt fired: msg='你是谁', children=0, parent._interrupt=True
+15:15:58 ENTER: queued interrupt msg='你是谁', agent_running=True

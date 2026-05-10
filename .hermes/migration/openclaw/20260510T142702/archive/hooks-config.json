@@ -1,0 +1,10 @@
+{
+  "internal": {
+    "enabled": true,
+    "entries": {
+      "command-logger": {
+        "enabled": true
+      }
+    }
+  }
+}
