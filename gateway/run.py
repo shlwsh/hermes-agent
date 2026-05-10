@@ -1599,6 +1599,7 @@ class GatewayRunner:
                         error_code=None,
                         error_message=None,
                     )
+                    print(f"✓ {platform.value} connected")
                     logger.info("✓ %s connected", platform.value)
                 else:
                     logger.warning("✗ %s failed to connect", platform.value)
@@ -1694,6 +1695,7 @@ class GatewayRunner:
         })
         
         if connected_count > 0:
+            print(f"✓ Gateway running with {connected_count} platform(s)")
             logger.info("Gateway running with %s platform(s)", connected_count)
         
         # Build initial channel directory for send_message name resolution
