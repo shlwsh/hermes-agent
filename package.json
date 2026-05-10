@@ -10,7 +10,8 @@
     "hermes": "source venv/bin/activate && hermes",
     "chat": "source venv/bin/activate && hermes chat",
     "config": "source venv/bin/activate && hermes config",
-    "skills": "source venv/bin/activate && hermes skills"
+    "skills": "source venv/bin/activate && hermes skills",
+    "gateway": "source venv/bin/activate && hermes gateway"
   },
   "repository": {
     "type": "git",
