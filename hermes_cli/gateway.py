@@ -1557,6 +1557,8 @@ def run_gateway(verbose: int = 0, quiet: bool = False, replace: bool = False):
     print("│  Messaging platforms + cron scheduler                    │")
     print("│  Press Ctrl+C to stop                                   │")
     print("└─────────────────────────────────────────────────────────┘")
+    from hermes_constants import display_hermes_home
+    print(f"  📂 配置目录: {display_hermes_home()}")
     print()
     
     # Exit with code 1 if gateway fails to connect any platform,

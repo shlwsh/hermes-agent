@@ -7,3 +7,5 @@
 {"role": "assistant", "content": "指令已成功发送，机械臂正在移动到 Home 位置。", "reasoning": null, "finish_reason": "stop", "timestamp": "2026-05-11T17:33:14.515731"}
 {"role": "user", "content": "成功了", "timestamp": "2026-05-11T17:33:39.153206"}
 {"role": "assistant", "content": "太好了！机械臂已成功执行了移动到 Home 位置的操作。如果还有其他指令或需要进一步操作，请随时告诉我！", "reasoning": null, "finish_reason": "stop", "timestamp": "2026-05-11T17:33:39.153206"}
+{"role": "user", "content": "你好", "timestamp": "2026-05-11T17:54:58.629052"}
+{"role": "assistant", "content": "你好！有什么可以帮您完成的 Franka 机械臂操作任务吗？请告诉我具体指令，我会立即执行并反馈结果。", "reasoning": null, "finish_reason": "stop", "timestamp": "2026-05-11T17:54:58.629052"}
