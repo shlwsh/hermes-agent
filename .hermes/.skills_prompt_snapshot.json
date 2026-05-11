@@ -2,447 +2,447 @@
   "version": 1,
   "manifest": {
     "apple/apple-notes/SKILL.md": [
-      1778381804648401310,
+      1778381804648401400,
       2187
     ],
     "apple/apple-reminders/SKILL.md": [
-      1778381804648401310,
+      1778381804648401400,
       2548
     ],
     "apple/findmy/SKILL.md": [
-      1778381804648401310,
+      1778381804648401400,
       3748
     ],
     "apple/imessage/SKILL.md": [
-      1778381804648401310,
+      1778381804648401400,
       2442
     ],
     "autonomous-ai-agents/claude-code/SKILL.md": [
-      1778381804648401310,
+      1778381804648401400,
       34370
     ],
     "autonomous-ai-agents/codex/SKILL.md": [
-      1778381804648401310,
+      1778381804648401400,
       4101
     ],
     "autonomous-ai-agents/hermes-agent/SKILL.md": [
-      1778381804648401310,
+      1778381804648401400,
       24978
     ],
     "autonomous-ai-agents/opencode/SKILL.md": [
-      1778381804648401310,
+      1778381804648401400,
       7356
     ],
     "creative/ascii-art/SKILL.md": [
-      1778381804648401310,
+      1778381804648401400,
       10631
     ],
     "creative/ascii-video/SKILL.md": [
-      1778381804648401310,
+      1778381804648401400,
       14734
     ],
     "creative/creative-ideation/SKILL.md": [
-      1778381804655734643,
+      1778381804655734700,
       6270
     ],
     "creative/excalidraw/SKILL.md": [
-      1778381804655734643,
+      1778381804655734700,
       7252
     ],
     "creative/manim-video/SKILL.md": [
-      1778381804655734643,
+      1778381804655734700,
       11983
     ],
     "creative/p5js/SKILL.md": [
-      1778381804659401310,
+      1778381804659401400,
       27372
     ],
     "creative/popular-web-designs/SKILL.md": [
-      1778381804659401310,
+      1778381804659401400,
       9444
     ],
     "creative/songwriting-and-ai-music/SKILL.md": [
-      1778381804666734644,
+      1778381804666734700,
       10344
     ],
     "data-science/jupyter-live-kernel/SKILL.md": [
-      1778381804666734644,
+      1778381804666734700,
       5571
     ],
     "devops/webhook-subscriptions/SKILL.md": [
-      1778381804666734644,
+      1778381804666734700,
       5704
     ],
     "dogfood/SKILL.md": [
-      1778381804666734644,
+      1778381804666734700,
       6294
     ],
     "email/himalaya/SKILL.md": [
-      1778381804666734644,
+      1778381804666734700,
       6003
     ],
     "gaming/minecraft-modpack-server/SKILL.md": [
-      1778381804666734644,
+      1778381804666734700,
       6662
     ],
     "gaming/pokemon-player/SKILL.md": [
-      1778381804670401310,
+      1778381804670401400,
       8818
     ],
     "github/codebase-inspection/SKILL.md": [
-      1778381804670401310,
+      1778381804670401400,
       3738
     ],
     "github/github-auth/SKILL.md": [
-      1778381804670401310,
+      1778381804670401400,
       7673
     ],
     "github/github-code-review/SKILL.md": [
-      1778381804670401310,
+      1778381804670401400,
       13639
     ],
     "github/github-issues/SKILL.md": [
-      1778381804670401310,
+      1778381804670401400,
       9352
     ],
     "github/github-pr-workflow/SKILL.md": [
-      1778381804670401310,
+      1778381804670401400,
       10085
     ],
     "github/github-repo-management/SKILL.md": [
-      1778381804670401310,
+      1778381804670401400,
       13776
     ],
     "leisure/find-nearby/SKILL.md": [
-      1778381804674067977,
+      1778381804674068000,
       3088
     ],
     "mcp/mcporter/SKILL.md": [
-      1778381804674067977,
+      1778381804674068000,
       3152
     ],
     "mcp/native-mcp/SKILL.md": [
-      1778381804674067977,
+      1778381804674068000,
       12542
     ],
     "media/gif-search/SKILL.md": [
-      1778381804674067977,
+      1778381804674068000,
       2687
     ],
     "media/heartmula/SKILL.md": [
-      1778381804674067977,
+      1778381804674068000,
       6402
     ],
     "media/songsee/SKILL.md": [
-      1778381804674067977,
+      1778381804674068000,
       2441
     ],
     "media/youtube-content/SKILL.md": [
-      1778381804674067977,
+      1778381804674068000,
       3152
     ],
     "mlops/cloud/modal/SKILL.md": [
-      1778381804674067977,
+      1778381804674068000,
       8580
     ],
     "mlops/evaluation/lm-evaluation-harness/SKILL.md": [
-      1778381804677734644,
+      1778381804677734700,
       11920
     ],
     "mlops/evaluation/weights-and-biases/SKILL.md": [
-      1778381804677734644,
+      1778381804677734700,
       12479
     ],
     "mlops/huggingface-hub/SKILL.md": [
-      1778381804677734644,
+      1778381804677734700,
       3750
     ],
     "mlops/inference/gguf/SKILL.md": [
-      1778381804677734644,
+      1778381804677734700,
       10345
     ],
     "mlops/inference/guidance/SKILL.md": [
-      1778381804677734644,
+      1778381804677734700,
       14540
     ],
     "mlops/inference/llama-cpp/SKILL.md": [
-      1778381804677734644,
+      1778381804677734700,
       5937
     ],
     "mlops/inference/obliteratus/SKILL.md": [
-      1778381804681401311,
+      1778381804681401400,
       15366
     ],
     "mlops/inference/outlines/SKILL.md": [
-      1778381804681401311,
+      1778381804681401400,
       15976
     ],
     "mlops/inference/vllm/SKILL.md": [
-      1778381804681401311,
+      1778381804681401400,
       9051
     ],
     "mlops/models/audiocraft/SKILL.md": [
-      1778381804681401311,
+      1778381804681401400,
       16333
     ],
     "mlops/models/clip/SKILL.md": [
-      1778381804681401311,
+      1778381804681401400,
       6909
     ],
     "mlops/models/segment-anything/SKILL.md": [
-      1778381804681401311,
+      1778381804681401400,
       13428
     ],
     "mlops/models/stable-diffusion/SKILL.md": [
-      1778381804685067977,
+      1778381804685068000,
       13014
     ],
     "mlops/models/whisper/SKILL.md": [
-      1778381804685067977,
+      1778381804685068000,
       7491
     ],
     "mlops/research/dspy/SKILL.md": [
-      1778381804685067977,
+      1778381804685068000,
       15316
     ],
     "mlops/training/axolotl/SKILL.md": [
-      1778381804685067977,
+      1778381804685068000,
       4822
     ],
     "mlops/training/grpo-rl-training/SKILL.md": [
-      1778381804688734643,
+      1778381804688734700,
       17225
     ],
     "mlops/training/peft/SKILL.md": [
-      1778381804688734643,
+      1778381804688734700,
       12235
     ],
     "mlops/training/pytorch-fsdp/SKILL.md": [
-      1778381804688734643,
+      1778381804688734700,
       160170
     ],
     "mlops/training/trl-fine-tuning/SKILL.md": [
-      1778381804688734643,
+      1778381804688734700,
       11476
     ],
     "mlops/training/unsloth/SKILL.md": [
-      1778381804692401310,
+      1778381804692401400,
       2332
     ],
     "mybot/SKILL.md": [
-      1778491799739397522,
+      1778491799739397600,
       3619
     ],
     "note-taking/obsidian/SKILL.md": [
-      1778381804703401310,
+      1778381804703401400,
       1264
     ],
     "openclaw-imports/weather/SKILL.md": [
-      1773843018261380314,
+      1773843018261380400,
       1169
     ],
     "openclaw-imports/web-search-pro/SKILL.md": [
-      1773096610153796553,
+      1773096610153796600,
       6552
     ],
     "productivity/google-workspace/SKILL.md": [
-      1778381804703401310,
+      1778381804703401400,
       7640
     ],
     "productivity/linear/SKILL.md": [
-      1778381804707067977,
+      1778381804707068000,
       11324
     ],
     "productivity/nano-pdf/SKILL.md": [
-      1778381804707067977,
+      1778381804707068000,
       1494
     ],
     "productivity/notion/SKILL.md": [
-      1778381804707067977,
+      1778381804707068000,
       5300
     ],
     "productivity/ocr-and-documents/SKILL.md": [
-      1778381804707067977,
+      1778381804707068000,
       5399
     ],
     "productivity/powerpoint/SKILL.md": [
-      1778381804707067977,
+      1778381804707068000,
       9194
     ],
     "red-teaming/godmode/SKILL.md": [
-      1778381804714401311,
+      1778381804714401400,
       20155
     ],
     "research/arxiv/SKILL.md": [
-      1778381804714401311,
+      1778381804714401400,
       10212
     ],
     "research/blogwatcher/SKILL.md": [
-      1778381804714401311,
+      1778381804714401400,
       5169
     ],
     "research/llm-wiki/SKILL.md": [
-      1778381804718067977,
+      1778381804718068000,
       17298
     ],
     "research/polymarket/SKILL.md": [
-      1778381804718067977,
+      1778381804718068000,
       3046
     ],
     "research/research-paper-writing/SKILL.md": [
-      1778381804718067977,
+      1778381804718068000,
       103549
     ],
     "robotics/franka-arm-control/SKILL.md": [
-      1778491935542269342,
+      1778491935542269400,
       770
     ],
     "smart-home/openhue/SKILL.md": [
-      1778381804725401311,
+      1778381804725401400,
       2770
     ],
     "social-media/xitter/SKILL.md": [
-      1778381804729067977,
+      1778381804729068000,
       6140
     ],
     "software-development/plan/SKILL.md": [
-      1778381804729067977,
+      1778381804729068000,
       2069
     ],
     "software-development/requesting-code-review/SKILL.md": [
-      1778381804729067977,
+      1778381804729068000,
       8606
     ],
     "software-development/subagent-driven-development/SKILL.md": [
-      1778381804729067977,
+      1778381804729068000,
       9843
     ],
     "software-development/systematic-debugging/SKILL.md": [
-      1778381804729067977,
+      1778381804729068000,
       10538
     ],
     "software-development/test-driven-development/SKILL.md": [
-      1778381804729067977,
+      1778381804729068000,
       9625
     ],
     "software-development/writing-plans/SKILL.md": [
-      1778381804729067977,
+      1778381804729068000,
       7309
     ],
     "apple/DESCRIPTION.md": [
-      1778381804648401310,
+      1778381804648401400,
       152
     ],
     "autonomous-ai-agents/DESCRIPTION.md": [
-      1778381804648401310,
+      1778381804648401400,
       211
     ],
     "creative/DESCRIPTION.md": [
-      1778381804648401310,
+      1778381804648401400,
       116
     ],
     "data-science/DESCRIPTION.md": [
-      1778381804666734644,
+      1778381804666734700,
       137
     ],
     "diagramming/DESCRIPTION.md": [
-      1778381804666734644,
+      1778381804666734700,
       159
     ],
     "domain/DESCRIPTION.md": [
-      1778381804666734644,
+      1778381804666734700,
       1142
     ],
     "email/DESCRIPTION.md": [
-      1778381804666734644,
+      1778381804666734700,
       101
     ],
     "feeds/DESCRIPTION.md": [
-      1778381804666734644,
+      1778381804666734700,
       115
     ],
     "gaming/DESCRIPTION.md": [
-      1778381804666734644,
+      1778381804666734700,
       129
     ],
     "gifs/DESCRIPTION.md": [
-      1778381804670401310,
+      1778381804670401400,
       109
     ],
     "github/DESCRIPTION.md": [
-      1778381804670401310,
+      1778381804670401400,
       167
     ],
     "inference-sh/DESCRIPTION.md": [
-      1778381804674067977,
+      1778381804674068000,
       706
     ],
     "mcp/DESCRIPTION.md": [
-      1778381804674067977,
+      1778381804674068000,
       271
     ],
     "media/DESCRIPTION.md": [
-      1778381804674067977,
+      1778381804674068000,
       139
     ],
     "mlops/DESCRIPTION.md": [
-      1778381804674067977,
+      1778381804674068000,
       162
     ],
     "mlops/cloud/DESCRIPTION.md": [
-      1778381804674067977,
+      1778381804674068000,
       92
     ],
     "mlops/evaluation/DESCRIPTION.md": [
-      1778381804677734644,
+      1778381804677734700,
       126
     ],
     "mlops/inference/DESCRIPTION.md": [
-      1778381804677734644,
+      1778381804677734700,
       161
     ],
     "mlops/models/DESCRIPTION.md": [
-      1778381804681401311,
+      1778381804681401400,
       191
     ],
     "mlops/research/DESCRIPTION.md": [
-      1778381804685067977,
+      1778381804685068000,
       113
     ],
     "mlops/training/DESCRIPTION.md": [
-      1778381804685067977,
+      1778381804685068000,
       150
     ],
     "mlops/vector-databases/DESCRIPTION.md": [
-      1778381804703401310,
+      1778381804703401400,
       125
     ],
     "note-taking/DESCRIPTION.md": [
-      1778381804703401310,
+      1778381804703401400,
       146
     ],
     "openclaw-imports/DESCRIPTION.md": [
-      1778394422114490382,
+      1778394422114490400,
       44
     ],
     "productivity/DESCRIPTION.md": [
-      1778381804703401310,
+      1778381804703401400,
       114
     ],
     "productivity/ocr-and-documents/DESCRIPTION.md": [
-      1778381804707067977,
+      1778381804707068000,
       147
     ],
     "research/DESCRIPTION.md": [
-      1778381804714401311,
+      1778381804714401400,
       179
     ],
     "smart-home/DESCRIPTION.md": [
-      1778381804725401311,
+      1778381804725401400,
       123
     ],
     "social-media/DESCRIPTION.md": [
-      1778381804729067977,
+      1778381804729068000,
       151
     ]
   },

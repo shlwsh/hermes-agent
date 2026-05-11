@@ -52,6 +52,16 @@
 
 ---
 
+## 4. Web 控制面板
+
+**`bun run hermes dashboard`**
+- **功能描述**：启动并访问 Hermes-Agent 的内置 Web 可视化配置面板。
+- **运行机制**：该面板是一个独立的本地 Web 服务（基于 FastAPI 和 Vite/React），启动后默认监听 `http://127.0.0.1:9119`。
+- **与 Gateway 的关系**：**Dashboard 和 Gateway 是两个完全独立解耦的服务**。启动 Dashboard **不会**自动启动后台的网关服务。Dashboard 仅起到监控网关状态、修改运行配置参数以及填写 API Keys 的作用。
+- **使用场景**：首次使用需要填写大模型 API Key、想要通过可视化界面调整 Agent 的底层配置（无需手动改 yaml），或是查看当前 Gateway 和 Session 的监控状态时使用。如果你需要通过飞书、Telegram 等对外暴露机器人服务，仍需要单独运行 `bun run gateway start`。
+
+---
+
 ### 技术提示：
 所有的 `bun run` 脚本内部结构均采用以下统一模式：
 ```bash
