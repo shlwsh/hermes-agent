@@ -285,6 +285,11 @@ def resolve_skill_command_key(command: str) -> Optional[str]:
     if not command:
         return None
     cmd_key = f"/{command.replace('_', '-')}"
+    if cmd_key in get_skill_commands():
+        return cmd_key
+        
+    # If not found, it might be a newly added skill. Rescan and try once more.
+    scan_skill_commands()
     return cmd_key if cmd_key in get_skill_commands() else None
 
 

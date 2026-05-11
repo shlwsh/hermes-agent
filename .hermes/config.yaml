@@ -183,7 +183,8 @@ delegation:
   reasoning_effort: ''
 prefill_messages_file: ''
 skills:
-  external_dirs: []
+  external_dirs:
+  - /home/smz/projects/hermes-agent/.agent/skills
 honcho: {}
 timezone: ''
 discord:
