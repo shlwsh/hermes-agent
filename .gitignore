@@ -5,6 +5,7 @@ __pycache__/
 .venv/
 .vscode/
 .env
+!.hermes/.env
 .env.local
 .env.development.local
 .env.test.local

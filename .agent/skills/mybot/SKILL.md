@@ -74,6 +74,25 @@ curl -s -X POST http://localhost:8000/api/v1/gripper/grasp -H "X-API-Key: franka
 
 - **直接执行，不要询问确认**。用户的指令就是执行授权。
 - 所有操作结果必须以中文向用户反馈。
+
+### ⚠️ 结果判定规则（必须严格遵守）
+
+**在向用户反馈之前，你必须按以下顺序检查 `terminal` 工具的返回值：**
+
+1. **检查 `exit_code`**：
+   - `exit_code = 0` → curl 请求已成功发送，继续检查 HTTP 响应内容
+   - `exit_code = 7` → **连接失败**，API 服务器未运行。必须告诉用户：「❌ 无法连接到 Franka API 服务器 (localhost:8000)，请确认服务是否已启动。」
+   - `exit_code != 0`（其他值） → **命令执行失败**。必须告诉用户具体错误码和含义，**严禁谎报成功**。
+
+2. **检查 HTTP 响应内容**（仅当 exit_code = 0 时）：
+   - 包含 `"Goal accepted"` 或 `"success": true` → 告诉用户指令已发送，机械臂正在运动
+   - 包含错误信息（如 `"error"`, `"failed"`, HTTP 4xx/5xx） → 告诉用户具体错误内容
+
+3. **绝对禁止的行为**：
+   - ❌ 当 `exit_code != 0` 时说"命令已发送"或"机械臂正在运动"
+   - ❌ 忽略 `exit_code` 直接编造成功回复
+   - ❌ 在无法确认结果时假设操作成功
+
+### 其他约束
 - 仿真模式下 `"No robot state received yet"` 和 `"Error Recovery Action Server not available"` 都是正常现象，忽略即可。
-- 如果运动 API 返回成功（如 `"Goal accepted"`），告诉用户指令已发送，机械臂正在运动。
-- 如果运动 API 返回失败，告诉用户具体错误并建议检查 API 服务器。
+- 如果用户反复遇到连接失败，建议用户检查 Franka API 服务是否启动（`ros2 launch` 或对应的启动脚本）。
