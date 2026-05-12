@@ -1,9 +1,9 @@
 {
   "agent:main:feishu:dm:oc_279542eb73c4396f2eb352b300a7c474": {
     "session_key": "agent:main:feishu:dm:oc_279542eb73c4396f2eb352b300a7c474",
-    "session_id": "20260512_135501_c69129e2",
-    "created_at": "2026-05-12T13:55:01.719115",
-    "updated_at": "2026-05-12T14:03:01.872300",
+    "session_id": "20260512_174417_1835e6c3",
+    "created_at": "2026-05-12T17:44:17.834404",
+    "updated_at": "2026-05-12T18:22:02.759834",
     "display_name": "oc_279542eb73c4396f2eb352b300a7c474",
     "platform": "feishu",
     "chat_type": "dm",
@@ -12,7 +12,7 @@
     "cache_read_tokens": 0,
     "cache_write_tokens": 0,
     "total_tokens": 0,
-    "last_prompt_tokens": 14454,
+    "last_prompt_tokens": 4096,
     "estimated_cost_usd": 0.0,
     "cost_status": "unknown",
     "memory_flushed": false,

@@ -11,7 +11,8 @@
     "chat": "eval $(bash scripts/get_proxy.sh) && source venv/bin/activate && hermes chat",
     "config": "eval $(bash scripts/get_proxy.sh) && source venv/bin/activate && hermes config",
     "skills": "eval $(bash scripts/get_proxy.sh) && source venv/bin/activate && hermes skills",
-    "gateway": "eval $(bash scripts/get_proxy.sh) && source venv/bin/activate && hermes gateway"
+    "gateway": "eval $(bash scripts/get_proxy.sh) && source venv/bin/activate && hermes gateway",
+    "startgateway": "bash scripts/startgateway.sh"
   },
   "repository": {
     "type": "git",

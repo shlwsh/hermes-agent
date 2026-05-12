@@ -1155,8 +1155,14 @@ class FeishuAdapter(BasePlatformAdapter):
             ),
             ws_reconnect_nonce=_coerce_required_int(extra.get("ws_reconnect_nonce"), default=30, min_value=0),
             ws_reconnect_interval=_coerce_required_int(extra.get("ws_reconnect_interval"), default=120, min_value=1),
-            ws_ping_interval=_coerce_int(extra.get("ws_ping_interval"), default=None, min_value=1),
-            ws_ping_timeout=_coerce_int(extra.get("ws_ping_timeout"), default=None, min_value=1),
+            ws_ping_interval=_coerce_int(
+                extra.get("ws_ping_interval") or os.getenv("FEISHU_WS_PING_INTERVAL", "30"), 
+                default=30, min_value=1
+            ),
+            ws_ping_timeout=_coerce_int(
+                extra.get("ws_ping_timeout") or os.getenv("FEISHU_WS_PING_TIMEOUT", "10"), 
+                default=10, min_value=1
+            ),
             admins=admins,
             default_group_policy=default_group_policy,
             group_rules=group_rules,
