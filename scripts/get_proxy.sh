@@ -8,10 +8,11 @@ if [ -z "$HOST_IP" ]; then
 fi
 
 if [ -n "$HOST_IP" ]; then
-    for port in 7897 7890 1080; do
-        if timeout 0.5s nc -zv $HOST_IP $port >/dev/null 2>&1; then
-            PROXY_URL="http://$HOST_IP:$port"
-            echo "export http_proxy=$PROXY_URL"
+    for ip in 127.0.0.1 $HOST_IP; do
+        for port in 7897 7890 1080; do
+            if timeout 0.5s nc -zv $ip $port >/dev/null 2>&1; then
+                PROXY_URL="http://$ip:$port"
+                echo "export http_proxy=$PROXY_URL"
             echo "export https_proxy=$PROXY_URL"
             echo "export all_proxy=$PROXY_URL"
             echo "export HTTP_PROXY=$PROXY_URL"
@@ -22,6 +23,7 @@ if [ -n "$HOST_IP" ]; then
             >&2 echo "📡 [Proxy] Detected host proxy at $PROXY_URL"
             exit 0
         fi
+        done
     done
 fi
 

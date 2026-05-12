@@ -16,10 +16,14 @@ def get_wsl_proxy():
     """自动检测 WSL 中的宿主机代理"""
     try:
         host_ip = run_command("ip route show | grep default | awk '{print $3}'")
+        ips_to_check = ["127.0.0.1"]
         if host_ip:
+            ips_to_check.append(host_ip)
+            
+        for ip in ips_to_check:
             for port in ["7897", "7890", "1080"]:
-                if run_command(f"nc -zv {host_ip} {port} 2>&1") is not None:
-                    return f"http://{host_ip}:{port}"
+                if run_command(f"nc -zv {ip} {port} 2>&1") is not None:
+                    return f"http://{ip}:{port}"
     except:
         pass
     return None
