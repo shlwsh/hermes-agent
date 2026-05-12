@@ -44,6 +44,10 @@ def main():
             if "127.0.0.1" in val or "localhost" in val:
                 del os.environ[var]
 
+    # 确保访问本地接口不走代理
+    os.environ["no_proxy"] = "localhost,127.0.0.1,::1"
+    os.environ["NO_PROXY"] = "localhost,127.0.0.1,::1"
+
     # 1. 验证 Git 仓库
     if run_command("git rev-parse --git-dir") is None:
         print("❌ 错误: 当前目录不是一个有效的 Git 仓库")
@@ -125,6 +129,11 @@ def main():
         data = response.json()
         commit_msg = data["choices"][0]["message"]["content"].strip()
         
+        # 移除 <think> 标签及其内容
+        if "<think>" in commit_msg and "</think>" in commit_msg:
+            import re
+            commit_msg = re.sub(r'<think>.*?</think>', '', commit_msg, flags=re.DOTALL).strip()
+            
         # 移除 markdown 代码块
         if commit_msg.startswith("```"):
             lines = commit_msg.split("\n")
@@ -133,6 +142,9 @@ def main():
             if lines and lines[-1].startswith("```"):
                 lines = lines[:-1]
             commit_msg = "\n".join(lines).strip()
+            
+        if not commit_msg:
+            raise Exception("AI 返回了空的提交信息")
 
     except Exception as e:
         print(f"⚠️ AI 生成提交信息失败 ({e})，正在使用托底逻辑...")

@@ -1,0 +1,2 @@
+context_lengths:
+  gemma4:e2b@http://localhost:11434/v1: 131072

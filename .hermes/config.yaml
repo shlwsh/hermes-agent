@@ -1,8 +1,9 @@
 model:
-  default: deepseek-v3
-  provider: custom
-  base_url: https://dashscope.aliyuncs.com/compatible-mode/v1
-  api_key: sk-6fc5d27d01594140ba02ecf47b89226a
+  default: gemma4:e2b
+  provider: local-ollama
+  base_url: http://localhost:11434/v1
+  api_key: ollama
+
 providers: {}
 fallback_providers: []
 credential_pool_strategies: {}
@@ -220,10 +221,10 @@ network:
   force_ipv4: false
 _config_version: 16
 custom_providers:
-- name: vllm
-  base_url: https://dashscope.aliyuncs.com/compatible-mode/v1
-  api_key: ''
-  api_mode: chat_completions
+- name: local-ollama
+  base_url: http://localhost:11434/v1
+  api_key: ollama
+  transport: openai_chat
 session_reset:
   mode: both
   idle_minutes: 1440
